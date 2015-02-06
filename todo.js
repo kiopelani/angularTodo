@@ -6,6 +6,7 @@ angular.module('todoApp', [])
 
       $scope.addTodo = function() {
         $scope.todos.push({text:$scope.todoText, done:false});
+        $scope.todoText = "";
       };
 
       $scope.remaining = function() {
